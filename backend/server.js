@@ -33,8 +33,12 @@ app.post("/enviar", async (req, res) => {
   try {
     await sgMail.send(email);
     res.send("Correo enviado");
-  } catch (error) {
-    console.error(error);
+  } 
+  catch (error) {
+    console.error("ERROR COMPLETO:", error);
+    if (error.response) {
+      console.error("SENDGRID ERROR:", error.response.body);
+    }
     res.status(500).send("Error al enviar");
   }
 });
