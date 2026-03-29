@@ -10,7 +10,9 @@ app.use(express.json());
 
 // 1. Configurar el email (tu cuenta)
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  service: "smtp.gmail.com",
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASS
