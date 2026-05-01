@@ -4,13 +4,18 @@ html, body{
     background-color: #F7F7F7;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'akira';
     src: url('../Fuentes/Akira/titulo.otf');
+} */
+
+@font-face {
+    font-family: 'plateia';
+    src: url('../Fuentes/plateia/Plateia\ Bold.ttf');
 }
 
 h1{
-    font-family: 'akira';
+    font-family: 'plateia';
     font-size: 4em;
 }
 
@@ -47,14 +52,16 @@ nav p, .menuPC ul{
 }
 
 .menu{
-    background-color: #017CA4;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    background-color: #404040;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
     width: 100vw;
 }
 
 .logoM{
+    justify-self: start;
     font-size: 1.5em;
     color: #ffffff;
 }
@@ -71,9 +78,17 @@ nav p, .menuPC ul{
     display: none;
 }
 
+.menuPC{
+    justify-self: center;
+}
+
 .menuPC, .menuCont{
     display: flex;
     align-items: center;
+}
+
+.menuCont{
+    justify-self: end;
 }
 
 .menuPC ul{
@@ -85,7 +100,7 @@ nav p, .menuPC ul{
 }
 
 .menuPC a:hover{
-    color: #F2C200;
+    color: #F2933A;
 }
 
 .menuCont{
@@ -94,11 +109,11 @@ nav p, .menuPC ul{
 }
 
 .menuCont p{
-    color: #F2C200;
+    color: #F2933A;
 }
 
 .botonContactMenu{
-    background-color: #F2C200;
+    background-color: #F2933A;
     border: none;
     padding: 11px 15px;
     color: black;
@@ -107,12 +122,16 @@ nav p, .menuPC ul{
 }
 
 .botonContactMenu:hover{
-    background-color: #D9AE00;
+    background-color: #C2690F;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 @media (max-width: 1023px){
+
+    .menu{
+        grid-template-columns: 1fr 1fr;
+    }
 
     .menuPC, .menuCont{
         display: none;
@@ -120,13 +139,14 @@ nav p, .menuPC ul{
 
     .botonMenuPeke{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         gap: 30px;
+        justify-self: end;
     }
 
     .botonMenuPeke p{
-        color: #f2c200;
+        color: #F2933A;
     }
 }
 
@@ -146,7 +166,7 @@ header::before{
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("../img/portada.jpeg");
+    background-image: url("../img/portada.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -178,7 +198,7 @@ header h1{
 }
 
 .convencer hr{
-    background-color: #009FB7;
+    background-color: #F0963C;
     opacity: 1;
     height: 5px;
     border: none;
@@ -210,7 +230,6 @@ header h1{
     gap: 30px;
     text-align: center;
     width: 400px;
-    background-color: #D9D9D9;
 }
 
 .formulario form{
@@ -231,7 +250,7 @@ header h1{
 }
 
 button{
-    background-color: #F2C200;
+    background-color: #F2933A;
     border: none;
     padding: 11px 15px;
 }
@@ -256,13 +275,15 @@ button{
     }
 }
 
+
 /* ----- FOOTER ----- */
 footer{
     background-color: #2B2F33;
-    padding: 100px 0px;
+    padding: 100px 50px;
     color: #FFFFFF;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
 }
 
 footer h2{
@@ -274,6 +295,7 @@ footer h2{
     flex-direction: column;
     align-items: start;
     text-align: left;
+    justify-self: start;
 }
 
 .footerTitulo{
@@ -291,6 +313,7 @@ footer h2{
     text-align: center;
     display: flex;
     align-items: end;
+    justify-self: center;
 }
 
 .div2 ul{
@@ -310,7 +333,7 @@ footer h2{
 }
 
 .div2 a:hover{
-    color: #F2C200;
+    color: #F2933A;
 }
 
 .div3{
@@ -318,18 +341,29 @@ footer h2{
     display: flex;
     flex-direction: column;
     justify-content:end;
+    justify-self: end;
 }
 
 @media (max-width: 767px){
+
     footer{
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 50px 25px;
+        text-align: center;
+        gap: 30px;
     }
 
     .div1{
-        margin-bottom: 25px;
+        margin-bottom: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerTitulo{
+        justify-content: center;
     }
 
     .div2{
@@ -337,6 +371,8 @@ footer h2{
     }
 
     .div3{
-        text-align: left;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
