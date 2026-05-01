@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>Blog - GaragePrint3D</title>
+</head>
+<body>
+    <!-- ---- MENU ---- -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="menu">
+            <a class="navbar-brand logoM" href="index.html"><img class="imgLogoM" src="img/logo_naranja_sinfondo.png" alt=""></a>
+            <div class="menuPC">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menuCont">
+                <p>686 15 35 94</p>
+                <a class="botonContactMenu" href="contactanos.html">Contactanos</a>
+            </div>
+            <div class="botonMenuPeke">
+                <p>686 15 35 94</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Garage Print 3D</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactanos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ---- BLOG ---- -->
+    <section class="blog">
+
+        <!-- POST 1 -->
+        <article class="post">
+            <img src="img/diablo.jpg" alt="Post 1">
+            <p>Poster de Diablo 4</p>
+        </article>
+
+        <!-- POST 2 -->
+        <article class="post">
+            <img src="img/predator.jpg" alt="Post 2">
+            <p>Poster de Predator</p>
+        </article>
+
+        <!-- POST 3 -->
+        <article class="post">
+            <img src="img/mandalorian.jpg" alt="Post 3">
+            <p>Figura de The Mandalorian con Grogu</p>
+        </article>
+
+        <!-- POST 4 (carrusel simple) -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/mandalorian1.jpg" alt="Post 4">
+                    <img src="img/mandalorian2.jpg" alt="Post 5">
+                    <img src="img/mandalorian3.jpg" alt="Post 6">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p>Figuras de The Mandalorian i Grogu sin pintar</p>
+
+        </article>
+
+        <!-- POST 5 -->
+        <article class="post">
+            <video controls>
+                <source src="videos/mandalorianVideo.mp4" type="video/mp4">
+            </video>
+            <p>Recien sacado de la impresora 3D</p>
+        </article>
+
+        <!-- POST 6 (carrusel simple) -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/naruto1.jpg" alt="">
+                    <img src="img/naruto2.jpg" alt="">
+                    <img src="img/naruto3.jpg" alt="">
+                    <img src="img/naruto4.jpg" alt="">
+                    <img src="img/naruto5.jpg" alt="">
+                    <img src="img/naruto6.jpg" alt="">
+                    <img src="img/narutofoto.png" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p>Figura de Naruto por piezas</p>
+
+        </article>
+
+        <!-- POST 7 -->
+        <article class="post">
+            <video controls>
+                <source src="videos/naruto.mp4" type="video/mp4">
+            </video>
+            <p>Figura de Naruto terminada</p>
+        </article>
+
+        <!-- POST 8 (carrusel simple) -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/guitarrista1.jpg" alt="">
+                    <img src="img/guitarrista2.jpg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p>Guitarrista</p>
+
+        </article>
+
+        <!-- POST 9 -->
+        <article class="post">
+            <img src="img/trofeoEscalabirres.jpg" alt="Post 9">
+            <p>Trofeo del Escalabirres</p>
+        </article>
+
+        <!-- POST 10 (carrusel simple) -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/noviaCadaver1.jpg" alt="">
+                    <img src="img/noviaCadaver2.jpg" alt="">
+                    <img src="img/noviaCadaver3.jpg" alt="">
+                    <img src="img/noviaCadaver4.jpg" alt="">
+                    <img src="img/noviaCadaver5.jpg" alt="">
+                    <img src="img/noviaCadaver6.jpg" alt="">
+                    <img src="img/noviaCadaver7.jpg" alt="">
+                    <img src="img/noviaCadaver8.jpg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p>Figura terminada de la Novia cadaver pintada</p>
+
+        </article>
+
+        <!-- POST 11 (carrusel simple) -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/calavera1.jpg" alt="">
+                    <img src="img/calavera2.jpg" alt="">
+                    <img src="img/calavera3.jpg" alt="">
+                    <img src="img/calavera4.jpg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p>Calavera de dos colores</p>
+
+        </article>
+
+        <!-- POST 12 -->
+        <article class="post">
+            <video controls>
+                <source src="videos/calavera.mp4" type="video/mp4">
+            </video>
+            <p>Video de la calavera de dos colores</p>
+        </article>
+
+        <!-- POST 13 (carrusel simple) -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/betyboo1.jpg" alt="">
+                    <img src="img/betyboo2.jpg" alt="">
+                    <img src="img/betyboo3.jpg" alt="">
+                    <img src="img/betyboo4.jpg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p>Betty Boop</p>
+
+        </article>
+
+        <!-- POST 14 -->
+        <article class="post">
+            <img src="img/predatorConCuadro.jpg" alt="Post 14">
+            <p>Cuadro para el poster de Predator</p>
+        </article>
+
+        <!-- POST 15 (carrusel simple) -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/terminator1.jpg" alt="">
+                    <img src="img/terminator2.jpg" alt="">
+                    <img src="img/terminator3.jpg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p>Terminator con sensor</p>
+
+        </article>
+
+        <!-- POST 16 (carrusel simple) -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/llaverosImanes1.jpg" alt="">
+                    <img src="img/llaverosImanes2.jpg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p>Llaveros e imanes</p>
+
+        </article>
+
+        <!-- POST 17 -->
+        <article class="post">
+            <video controls>
+                <source src="videos/llaverobarça.mp4" type="video/mp4">
+            </video>
+            <p>Llavero del Barça</p>
+        </article>
+
+        <!-- POST 18 -->
+        <article class="post">
+            <img src="img/gohan.jpg" alt="Post 18">
+            <p>Figura de Gohan Bestia</p>
+        </article>
+
+    </section>
+
+    <!-- ---- FOOTER ---- -->
+    <footer>
+        <div class="div1">
+            <div class="footerTitulo">
+                <img class="imgLogoF" src="img/logo_naranja_sinfondo.png" alt="">
+                <h2>GARAGE PRINT 3D</h2>
+            </div>
+            <p>Impresiones 3D i personalizaciones</p>
+            <p>Servicio profesional y de calidad</p>
+        </div>
+        <div class="div2">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Quienes Somos</a>
+                </li>
+                <li>
+                    <a href="contactanos.html">Contactanos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="div3">
+            <p>686 15 35 94</p>
+            <p>garageprint3d@gmail.com</p>
+            <p>Sabadell, Barcelona</p>
+        </div>
+    </footer>
+    
+    <script src="js/blog.js"></script>
+</body>
+</html>
