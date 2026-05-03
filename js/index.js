@@ -11,7 +11,7 @@ if (formulario) {
         
         console.log(nombre, email, telefono, mensaje);
         
-        const res = await fetch("https://altiva.onrender.com/enviar", {
+        const res = await fetch("https://garageprint3d.onrender.com/enviar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
