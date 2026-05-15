@@ -10,6 +10,7 @@ app.use(express.json());
 
 // SendGrid
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// sgMail.setDataResidency('eu');
 
 // Ruta formulario
 app.post("/enviar", async (req, res) => {
@@ -18,7 +19,7 @@ app.post("/enviar", async (req, res) => {
 
   const email = {
     to: process.env.EMAIL, 
-    from: process.env.EMAIL,
+    from: process.env.CONTACT,
     subject: `Nuevo mensaje de ${datos.nombre}`,
     text: `
           Nombre: ${datos.nombre}
