@@ -112,6 +112,10 @@ nav p, .menuPC ul{
     gap: 30px;
 }
 
+.datoMenu{
+    margin: 0px !important;
+}
+
 .menuCont p{
     color: #F2933A;
 }
