@@ -397,6 +397,158 @@ header::before{
     }
 } */
 
+/* ----- CONTADOR ----- */
+
+.sectionContador{
+    width: 100%;
+    padding: 80px 20px;
+    background: #141e31;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contadorCard{
+    width: 100%;
+    max-width: 1100px;
+
+    background: #1b1b1b;
+
+    border-radius: 24px;
+
+    padding: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+/* IZQUIERDA */
+
+.contadorLeft{
+    min-width: 260px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contadorMiniTitulo{
+    color: #ff7a00;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+}
+
+.contadorNumero{
+    pointer-events: none;
+
+    transform: scale(1.5);
+}
+
+/* DERECHA */
+
+.contadorRight h2{
+    color: white;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.contadorRight p{
+    color: #b8b8b8;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    max-width: 600px;
+
+    margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+
+    .contadorCard{
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 40px 25px;
+
+        gap: 40px;
+    }
+
+    .contadorLeft{
+        min-width: auto;
+        width: 100%;
+    }
+
+    .contadorRight{
+        width: 100%;
+    }
+
+    .contadorRight h2{
+        font-size: 26px;
+    }
+
+    .contadorRight p{
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .contadorNumero{
+        transform: scale(1.3);
+    }
+
+}
+
+@media(max-width: 767px){
+
+    .sectionContador{
+        padding: 60px 20px;
+    }
+
+    .contadorCard{
+        padding: 30px 20px;
+        border-radius: 18px;
+    }
+
+    .contadorMiniTitulo{
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .contadorNumero{
+        transform: scale(1.1);
+    }
+
+    .contadorRight h2{
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .contadorRight p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+}
+
 /* ----- SERVICIOS ----- */
 
 .sectionServicio{
@@ -740,6 +892,22 @@ footer h2{
     flex-direction: column;
     justify-content:end;
     justify-self: end;
+}
+
+.datos{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.datos p{
+    margin: 0px;
+}
+
+.datos img{
+    width: 30px;
 }
 
 @media (max-width: 767px){
