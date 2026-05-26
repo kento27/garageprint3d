@@ -10,29 +10,43 @@
     <title>GaragePrint3D - Contacto</title>
 </head>
 <body>
-<!-- ---- MENU ---- -->
+    <!-- ---- MENU ---- -->
     <nav class="navbar bg-body-tertiary">
         <div class="menu">
-            <a class="navbar-brand logoM" href="index.html"><img class="imgLogoM" src="img/logo_naranja_sinfondo.png" alt=""></a>
+            <div class="logoIdiomas">
+                <a class="navbar-brand logoM" href="index.html">
+                    <img class="imgLogoM" src="img/logo_naranja_sinfondo.png" alt="">
+                </a>
+                <div class="idiomas">
+                    <img src="img/esp.png" alt="Español" onclick="cambioIdioma('es')">
+                    <img src="img/cat.jpg" alt="Català" onclick="cambioIdioma('ca')">
+                </div>
+            </div>
             <div class="menuPC">
                 <ul>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html" data-translate="inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link" href="blog.html" data-translate="blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                        <a class="nav-link" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
                     </li>
                 </ul>
             </div>
             <div class="menuCont">
-                <p>686 15 35 94</p>
-                <a class="botonContactMenu" href="contactanos.html">Contactanos</a>
+                <div class="datos datoMenu">
+                    <img src="img/whatsapp.png" alt="">
+                    <p>686 15 35 94</p>
+                </div>
+                <a class="botonContactMenu" href="contactanos.html" data-translate="contactanos">Contactanos</a>
             </div>
             <div class="botonMenuPeke">
-                <p>686 15 35 94</p>
+                <div class="datos datoMenu">
+                    <img src="img/whatsapp.png" alt="">
+                    <p>686 15 35 94</p>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,16 +61,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html" data-translate="inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link" href="blog.html" data-translate="blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">Contacto</a>
+                            <a class="nav-link" href="contactanos.html" data-translate="contactanos">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -66,31 +80,36 @@
 
     <!-- ---- PORTADA ---- -->
     <header>
-        <h1>CONTACTO</h1>
+        <h1 data-translate="h1Contactanos">CONTACTO</h1>
     </header>
     
     <!-- ---- CONTACTENOS ---- -->
-    <section class="sectionContact">
+    <section class="sectionContact" id="sectionContact">
         <div class="convencer">
-            <h2>Tu mejor opción en calidad y precio</h2>
+            <h2 data-translate="h2Contactanos">Tu elección más óptima y económica</h2>
             <hr>
             <ul>
-                <li>Trato personalizado</li>
-                <li>Precios ajustados</li>
-                <li>Implicación en proyectos</li>
-                <li>Pasión por el 3D</li>
+                <li data-translate="liContactanos1">Trato personalizado</li>
+                <li data-translate="liContactanos2">Precios ajustados</li>
+                <li data-translate="liContactanos3">Implicación en proyectos</li>
+                <li data-translate="liContactanos4">Pasión por el 3D</li>
             </ul>
-            <p>Contactanos y te ayudaremos en tus necesidades<br>
-            (Todos los pedidos se efectuaran mediante PayPal)</p>
+            <p data-translate="pContactanos">Contactanos y te ayudaremos en tus necesidades<br>
+            Todos los pedidos se abonaran mediante: efectivo, PayPal o Bizum</p>
+            <div class="imgsPago">
+                <img src="img/efectivo.png" alt="Efectivo">
+                <img src="img/paypal.png" alt="PayPal">
+                <img src="img/bizum.png" alt="Bizum">
+            </div>
         </div>
         <div class="formulario">
-            <h3>Contactanos</h3>
+            <h3 data-translate="h3Contactanos">Contactanos</h3>
             <form id="formulario">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <input type="tel" name="tel" id="tel" placeholder="Telefono" required>
-                <textarea name="mensaje" id="mensaje" rows="5" placeholder="Mensaje" required></textarea>
-                <button type="submit" id="prova">Enviar</button>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" data-placeholder="nombre" required>
+                <input type="email" name="email" id="email" placeholder="Email" data-placeholder="email" required>
+                <input type="tel" name="tel" id="tel" placeholder="Telefono" data-placeholder="tel" required>
+                <textarea name="mensaje" id="mensaje" rows="5" placeholder="Mensaje" data-placeholder="mensaje" required></textarea>
+                <button type="submit" id="prova" data-translate="btnEnviar">Enviar</button>
             </form>
         </div>
     </section>
@@ -102,29 +121,42 @@
                 <img class="imgLogoF" src="img/logo_naranja_sinfondo.png" alt="">
                 <h2>GARAGE PRINT 3D</h2>
             </div>
-            <p>Impresiones 3D i personalizaciones</p>
-            <p>Servicio profesional y de calidad</p>
+            <p data-translate="pFooter1">Impresiones 3D i personalizaciones</p>
+            <p data-translate="pFooter2">Servicio profesional y de calidad</p>
         </div>
         <div class="div2">
             <ul>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="index.html" data-translate="aFooterInicio">Inicio</a>
                 </li>
                 <li>
-                    <a href="blog.html">Blog</a>
+                    <a href="blog.html" data-translate="aFooterBlog">Blog</a>
                 </li>
                 <li>
-                    <a href="nosotros.html">Quienes Somos</a>
+                    <a href="nosotros.html" data-translate="aFooterNosotros">Sobre Nosotros</a>
                 </li>
                 <li>
-                    <a href="contactanos.html">Contactanos</a>
+                    <a href="contactanos.html" data-translate="aFooterContactanos">Contactanos</a>
                 </li>
             </ul>
         </div>
         <div class="div3">
-            <p>686 15 35 94</p>
-            <p>garageprint3d@gmail.com</p>
-            <p>Sabadell, Barcelona</p>
+            <div class="datos dato1">
+                <img src="img/whatsapp.png" alt="">
+                <p>686 15 35 94</p>
+            </div>
+            <div class="datos dato2">
+                <img src="img/insta.png" alt="">
+                <p>garageprint3d</p>
+            </div>
+            <div class="datos dato3">
+                <img src="img/mail.png" alt="">
+                <p>garageprint3d@gmail.com</p>
+            </div>
+            <div class="datos dato4">
+                <img src="img/ubi.png" alt="">
+                <p>Sabadell, Barcelona</p>
+            </div>
         </div>
     </footer>
 

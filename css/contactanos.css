@@ -60,6 +60,13 @@ nav p, .menuPC ul{
     width: 100vw;
 }
 
+.logoIdiomas{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 10px;
+}
+
 .logoM{
     justify-self: start;
     font-size: 1.5em;
@@ -72,6 +79,32 @@ nav p, .menuPC ul{
 
 .imgLogoM{
     width: 60px;
+}
+
+.logoIdiomas{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 10px;
+}
+
+.idiomas{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.idiomas img{
+    width: 35px;
+    height: 27px;
+    object-fit: cover;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.idiomas img:hover{
+    transform: scale(1.1);
 }
 
 .botonMenuPeke{
@@ -89,6 +122,10 @@ nav p, .menuPC ul{
 
 .menuCont{
     justify-self: end;
+}
+
+.datoMenu{
+    margin: 0px !important;
 }
 
 .menuPC ul{
@@ -223,6 +260,20 @@ header h1{
     font-weight: bold;
 }
 
+.imgsPago{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.imgsPago img{
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
 .formulario{
     padding: 30px;
     display: flex;
@@ -342,6 +393,22 @@ footer h2{
     flex-direction: column;
     justify-content:end;
     justify-self: end;
+}
+
+.datos{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.datos p{
+    margin: 0px;
+}
+
+.datos img{
+    width: 30px;
 }
 
 @media (max-width: 767px){

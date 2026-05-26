@@ -64,6 +64,13 @@ nav p, .menuPC ul{
     width: 100vw;
 }
 
+.logoIdiomas{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 10px;
+}
+
 .logoM{
     justify-self: start;
     font-size: 1.5em;
@@ -76,6 +83,32 @@ nav p, .menuPC ul{
 
 .imgLogoM{
     width: 60px;
+}
+
+.logoIdiomas{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 10px;
+}
+
+.idiomas{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.idiomas img{
+    width: 35px;
+    height: 27px;
+    object-fit: cover;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.idiomas img:hover{
+    transform: scale(1.1);
 }
 
 .botonMenuPeke{
@@ -93,6 +126,10 @@ nav p, .menuPC ul{
 
 .menuCont{
     justify-self: end;
+}
+
+.datoMenu{
+    margin: 0px !important;
 }
 
 .menuPC ul{
@@ -151,6 +188,114 @@ nav p, .menuPC ul{
 
     .botonMenuPeke p{
         color: #F2933A;
+    }
+}
+
+/* ----- PORTADA ----- */
+header{
+    position: relative;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/portada.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+    transform: scale(1.1) scaleX(-1);
+}
+
+header h1{
+    position: relative;
+}
+
+@media (max-width: 767px){
+    header{
+        height: 30vh;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+}
+
+/* ----- RECUERDA ----- */
+
+.recuerdaSection{
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #111827;
+}
+
+.recuerda{
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+
+    background-color: #141e31;
+    padding: 60px;
+    border-radius: 20px;
+
+    color: #e5e7eb;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.recuerda h2{
+    color: #f97316;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.recuerda p{
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+    color: #d1d5db;
+}
+
+/* Tablet */
+@media (max-width: 1023px){
+    .recuerda{
+        padding: 40px;
+    }
+
+    .recuerda h2{
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px){
+
+    .recuerdaSection{
+        padding: 60px 15px;
+    }
+
+    .recuerda{
+        padding: 30px 20px;
+        border-radius: 16px;
+    }
+
+    .recuerda h2{
+        font-size: 1.6rem;
+    }
+
+    .recuerda p{
+        font-size: 1rem;
     }
 }
 
@@ -301,6 +446,22 @@ footer h2{
     flex-direction: column;
     justify-content:end;
     justify-self: end;
+}
+
+.datos{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.datos p{
+    margin: 0px;
+}
+
+.datos img{
+    width: 30px;
 }
 
 @media (max-width: 767px){

@@ -12,26 +12,40 @@
     <!-- ---- MENU ---- -->
     <nav class="navbar bg-body-tertiary">
         <div class="menu">
-            <a class="navbar-brand logoM" href="index.html"><img class="imgLogoM" src="img/logo_naranja_sinfondo.png" alt=""></a>
+            <div class="logoIdiomas">
+                <a class="navbar-brand logoM" href="index.html">
+                    <img class="imgLogoM" src="img/logo_naranja_sinfondo.png" alt="">
+                </a>
+                <div class="idiomas">
+                    <img src="img/esp.png" alt="Español" onclick="cambioIdioma('es')">
+                    <img src="img/cat.jpg" alt="Català" onclick="cambioIdioma('ca')">
+                </div>
+            </div>
             <div class="menuPC">
                 <ul>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html" data-translate="inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link" href="blog.html" data-translate="blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                        <a class="nav-link" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
                     </li>
                 </ul>
             </div>
             <div class="menuCont">
-                <p>686 15 35 94</p>
-                <a class="botonContactMenu" href="contactanos.html">Contactanos</a>
+                <div class="datos datoMenu">
+                    <img src="img/whatsapp.png" alt="">
+                    <p>686 15 35 94</p>
+                </div>
+                <a class="botonContactMenu" href="contactanos.html" data-translate="contactanos">Contactanos</a>
             </div>
             <div class="botonMenuPeke">
-                <p>686 15 35 94</p>
+                <div class="datos datoMenu">
+                    <img src="img/whatsapp.png" alt="">
+                    <p>686 15 35 94</p>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,16 +60,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html" data-translate="inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link" href="blog.html" data-translate="blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">Contacto</a>
+                            <a class="nav-link" href="contactanos.html" data-translate="contactanos">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -63,28 +77,23 @@
         </div>
     </nav>
 
+    <!-- Portada -->
+    <header>
+        <h1 data-translate="h1Blog">Blog</h1>
+    </header>
+
+    <!-- Recuerda -->
+    <section class="recuerdaSection">
+        <div class="recuerda">
+            <h2 data-translate="h2Recuerda">Recuerda</h2>
+            <p data-translate="pRecuerda">Nos mueve la pasión por la impresión 3D y es ahora cuando nos disponemos a monetizar parte de nuestro hobby. En este apartado lo mezclamos todo: lo personal y lo comercial. Aquí solo verás proyectos pasados, presentes y futuros de toda índole y condición, un chowseu del 3D.</p>
+        </div>
+    </section>
+
     <!-- ---- BLOG ---- -->
     <section class="blog">
 
-        <!-- POST 1 -->
-        <article class="post">
-            <img src="img/diablo.jpg" alt="Post 1">
-            <p>Poster de Diablo 4</p>
-        </article>
-
-        <!-- POST 2 -->
-        <article class="post">
-            <img src="img/predator.jpg" alt="Post 2">
-            <p>Poster de Predator</p>
-        </article>
-
-        <!-- POST 3 -->
-        <article class="post">
-            <img src="img/mandalorian.jpg" alt="Post 3">
-            <p>Figura de The Mandalorian con Grogu</p>
-        </article>
-
-        <!-- POST 4 (carrusel simple) -->
+        <!-- POST 1 (Carrusel) Llaveros e imanes -->
         <article class="post">
 
             <div class="carousel">
@@ -92,28 +101,98 @@
                 <button class="arrow left">&#10094;</button>
 
                 <div class="carousel-track">
-                    <img src="img/mandalorian1.jpg" alt="Post 4">
-                    <img src="img/mandalorian2.jpg" alt="Post 5">
-                    <img src="img/mandalorian3.jpg" alt="Post 6">
+                    <img src="img/llaverosImanes1.jpg" alt="">
+                    <img src="img/llaverosImanes2.jpg" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
 
             </div>
 
-            <p>Figuras de The Mandalorian i Grogu sin pintar</p>
+            <p data-translate="pLlaverosImanes">Llaveros e imanes</p>
 
         </article>
 
-        <!-- POST 5 -->
+        <!-- POST 2 (carrusel) Calavera -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/calavera1.jpg" alt="">
+                    <img src="img/calavera2.jpg" alt="">
+                    <img src="img/calavera3.jpg" alt="">
+                    <img src="img/calavera4.jpg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p data-translate="pCalavera">Calavera de dos colores</p>
+
+        </article>
+
+        <!-- POST 3 (Video) Calavera -->
+        <article class="post">
+            <video controls>
+                <source src="videos/calavera.mp4" type="video/mp4">
+            </video>
+            <p data-translate="pVideoCalavera">Video de la calavera de dos colores</p>
+        </article>
+
+        <!-- POST 4 (Video) Llavero del Barça -->
+        <article class="post">
+            <video controls>
+                <source src="videos/llaverobarça.mp4" type="video/mp4">
+            </video>
+            <p data-translate="pLlaveroBarça">Llavero del Barça</p>
+        </article>
+
+        <!-- POST 5 (img) Escalabirres -->
+        <article class="post">
+            <img src="img/trofeoEscalabirres.jpg" alt="">
+            <p data-translate="pTrofeoEscalabirres">Trofeo del Escalabirres</p>
+        </article>
+
+        <!-- POST 6 (img) Mandalorian -->
+        <article class="post">
+            <img src="img/mandalorian.jpg" alt="">
+            <p data-translate="pMandalorian">Figura de The Mandalorian con Grogu</p>
+        </article>
+
+        <!-- POST 7 (carrusel) Mandalorian -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/mandalorian1.jpg" alt="">
+                    <img src="img/mandalorian2.jpg" alt="">
+                    <img src="img/mandalorian3.jpg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p data-translate="pMandalorianSinPintar">Figuras de The Mandalorian i Grogu sin pintar</p>
+
+        </article>
+
+        <!-- POST 8 (Video) Mandalorian -->
         <article class="post">
             <video controls>
                 <source src="videos/mandalorianVideo.mp4" type="video/mp4">
             </video>
-            <p>Recien sacado de la impresora 3D</p>
+            <p data-translate="pMandalorianVideo">Recien sacado de la impresora 3D</p>
         </article>
 
-        <!-- POST 6 (carrusel simple) -->
+        <!-- POST 9 (carrusel) Terminator -->
         <article class="post">
 
             <div class="carousel">
@@ -121,32 +200,54 @@
                 <button class="arrow left">&#10094;</button>
 
                 <div class="carousel-track">
-                    <img src="img/naruto1.jpg" alt="">
-                    <img src="img/naruto2.jpg" alt="">
-                    <img src="img/naruto3.jpg" alt="">
-                    <img src="img/naruto4.jpg" alt="">
-                    <img src="img/naruto5.jpg" alt="">
-                    <img src="img/naruto6.jpg" alt="">
-                    <img src="img/narutofoto.png" alt="">
+                    <img src="img/terminator1.jpg" alt="">
+                    <img src="img/terminator2.jpg" alt="">
+                    <img src="img/terminator3.jpg" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
 
             </div>
 
-            <p>Figura de Naruto por piezas</p>
+            <p data-translate="pTerminator">Terminator con sensor</p>
 
         </article>
 
-        <!-- POST 7 -->
+        <!-- POST 10 (img) Predator -->
         <article class="post">
-            <video controls>
-                <source src="videos/naruto.mp4" type="video/mp4">
-            </video>
-            <p>Figura de Naruto terminada</p>
+            <img src="img/predator.jpg" alt="">
+            <p data-translate="pPredator">Poster de Predator</p>
         </article>
 
-        <!-- POST 8 (carrusel simple) -->
+        <!-- POST 11 (img) Marco Predator -->
+        <article class="post">
+            <img src="img/predatorConCuadro.jpg" alt="">
+            <p data-translate="pMarcoPredator">Cuadro para el poster de Predator</p>
+        </article>
+
+        <!-- POST 12 (carrusel) BetyBoo -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/betyboo1.jpg" alt="">
+                    <img src="img/betyboo2.jpg" alt="">
+                    <img src="img/betyboo3.jpg" alt="">
+                    <img src="img/betyboo4.jpg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p data-translate="pBetyBoop">Betty Boop</p>
+
+        </article>
+
+        <!-- POST 13 (carrusel) Guitarrista -->
         <article class="post">
 
             <div class="carousel">
@@ -162,17 +263,17 @@
 
             </div>
 
-            <p>Guitarrista</p>
+            <p data-translate="pGuitarrista">Guitarrista</p>
 
         </article>
 
-        <!-- POST 9 -->
+        <!-- POST 14 (img) Gohan -->
         <article class="post">
-            <img src="img/trofeoEscalabirres.jpg" alt="Post 9">
-            <p>Trofeo del Escalabirres</p>
+            <img src="img/gohan.jpg" alt="">
+            <p data-translate="pGohan">Figura de Gohan Bestia</p>
         </article>
 
-        <!-- POST 10 (carrusel simple) -->
+        <!-- POST 15 (carrusel) Novia Cadaver -->
         <article class="post">
 
             <div class="carousel">
@@ -194,11 +295,11 @@
 
             </div>
 
-            <p>Figura terminada de la Novia cadaver pintada</p>
+            <p data-translate="pNoviaCadaver">Figura terminada de la Novia cadaver pintada</p>
 
         </article>
 
-        <!-- POST 11 (carrusel simple) -->
+        <!-- POST 16 (carrusel) Naruto -->
         <article class="post">
 
             <div class="carousel">
@@ -206,109 +307,29 @@
                 <button class="arrow left">&#10094;</button>
 
                 <div class="carousel-track">
-                    <img src="img/calavera1.jpg" alt="">
-                    <img src="img/calavera2.jpg" alt="">
-                    <img src="img/calavera3.jpg" alt="">
-                    <img src="img/calavera4.jpg" alt="">
+                    <img src="img/naruto1.jpg" alt="">
+                    <img src="img/naruto2.jpg" alt="">
+                    <img src="img/naruto3.jpg" alt="">
+                    <img src="img/naruto4.jpg" alt="">
+                    <img src="img/naruto5.jpg" alt="">
+                    <img src="img/naruto6.jpg" alt="">
+                    <img src="img/narutofoto.png" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
 
             </div>
 
-            <p>Calavera de dos colores</p>
+            <p data-translate="pNaruto">Figura de Naruto por piezas</p>
 
         </article>
 
-        <!-- POST 12 -->
+        <!-- POST 17 (video) Naruto -->
         <article class="post">
             <video controls>
-                <source src="videos/calavera.mp4" type="video/mp4">
+                <source src="videos/naruto.mp4" type="video/mp4">
             </video>
-            <p>Video de la calavera de dos colores</p>
-        </article>
-
-        <!-- POST 13 (carrusel simple) -->
-        <article class="post">
-
-            <div class="carousel">
-
-                <button class="arrow left">&#10094;</button>
-
-                <div class="carousel-track">
-                    <img src="img/betyboo1.jpg" alt="">
-                    <img src="img/betyboo2.jpg" alt="">
-                    <img src="img/betyboo3.jpg" alt="">
-                    <img src="img/betyboo4.jpg" alt="">
-                </div>
-
-                <button class="arrow right">&#10095;</button>
-
-            </div>
-
-            <p>Betty Boop</p>
-
-        </article>
-
-        <!-- POST 14 -->
-        <article class="post">
-            <img src="img/predatorConCuadro.jpg" alt="Post 14">
-            <p>Cuadro para el poster de Predator</p>
-        </article>
-
-        <!-- POST 15 (carrusel simple) -->
-        <article class="post">
-
-            <div class="carousel">
-
-                <button class="arrow left">&#10094;</button>
-
-                <div class="carousel-track">
-                    <img src="img/terminator1.jpg" alt="">
-                    <img src="img/terminator2.jpg" alt="">
-                    <img src="img/terminator3.jpg" alt="">
-                </div>
-
-                <button class="arrow right">&#10095;</button>
-
-            </div>
-
-            <p>Terminator con sensor</p>
-
-        </article>
-
-        <!-- POST 16 (carrusel simple) -->
-        <article class="post">
-
-            <div class="carousel">
-
-                <button class="arrow left">&#10094;</button>
-
-                <div class="carousel-track">
-                    <img src="img/llaverosImanes1.jpg" alt="">
-                    <img src="img/llaverosImanes2.jpg" alt="">
-                </div>
-
-                <button class="arrow right">&#10095;</button>
-
-            </div>
-
-            <p>Llaveros e imanes</p>
-
-        </article>
-
-        <!-- POST 17 -->
-        <article class="post">
-            <video controls>
-                <source src="videos/llaverobarça.mp4" type="video/mp4">
-            </video>
-            <p>Llavero del Barça</p>
-        </article>
-
-        <!-- POST 18 -->
-        <article class="post">
-            <img src="img/gohan.jpg" alt="Post 18">
-            <p>Figura de Gohan Bestia</p>
+            <p data-translate="pNarutoVideo">Figura de Naruto terminada</p>
         </article>
 
     </section>
@@ -320,29 +341,42 @@
                 <img class="imgLogoF" src="img/logo_naranja_sinfondo.png" alt="">
                 <h2>GARAGE PRINT 3D</h2>
             </div>
-            <p>Impresiones 3D i personalizaciones</p>
-            <p>Servicio profesional y de calidad</p>
+            <p data-translate="pFooter1">Impresiones 3D i personalizaciones</p>
+            <p data-translate="pFooter2">Servicio profesional y de calidad</p>
         </div>
         <div class="div2">
             <ul>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="index.html" data-translate="aFooterInicio">Inicio</a>
                 </li>
                 <li>
-                    <a href="blog.html">Blog</a>
+                    <a href="blog.html" data-translate="aFooterBlog">Blog</a>
                 </li>
                 <li>
-                    <a href="nosotros.html">Quienes Somos</a>
+                    <a href="nosotros.html" data-translate="aFooterNosotros">Sobre Nosotros</a>
                 </li>
                 <li>
-                    <a href="contactanos.html">Contactanos</a>
+                    <a href="contactanos.html" data-translate="aFooterContactanos">Contactanos</a>
                 </li>
             </ul>
         </div>
         <div class="div3">
-            <p>686 15 35 94</p>
-            <p>garageprint3d@gmail.com</p>
-            <p>Sabadell, Barcelona</p>
+            <div class="datos dato1">
+                <img src="img/whatsapp.png" alt="">
+                <p>686 15 35 94</p>
+            </div>
+            <div class="datos dato2">
+                <img src="img/insta.png" alt="">
+                <p>garageprint3d</p>
+            </div>
+            <div class="datos dato3">
+                <img src="img/mail.png" alt="">
+                <p>garageprint3d@gmail.com</p>
+            </div>
+            <div class="datos dato4">
+                <img src="img/ubi.png" alt="">
+                <p>Sabadell, Barcelona</p>
+            </div>
         </div>
     </footer>
     
