@@ -3,6 +3,15 @@ if (formulario) {
     formulario.addEventListener("submit", async function(event) {
 
         event.preventDefault();
+
+        alert(
+            "⏳ Estamos enviando tu mensaje.\n\n" +
+            "Dependiendo de la carga del servidor, el proceso puede tardar hasta 1 minuto.\n" +
+            "No cierres esta página ni pulses varias veces el botón."
+        );
+
+        const boton = document.getElementById("prova");
+        boton.disabled = true;
         
         let nombre = document.getElementById('nombre').value;
         let email = document.getElementById('email').value;
@@ -33,6 +42,8 @@ if (formulario) {
         } else {
             alert("Error al enviar el mensaje");
         }
+
+        boton.disabled = false;
     });
 }
 
@@ -43,6 +54,7 @@ const traducciones = {
         // Navbar
         inicio: "Inicio",
         blog: "Blog",
+        empresa: "Empresa",
         nosotros: "Sobre nosotros",
         contactanos: "Contactanos",
 
@@ -105,18 +117,15 @@ const traducciones = {
         pRecuerda: "Nos mueve la pasión por la impresión 3D y es ahora cuando nos disponemos a monetizar parte de nuestro hobby. En este apartado lo mezclamos todo: lo personal y lo comercial. Aquí solo verás proyectos pasados, presentes y futuros de toda índole y condición, un chowseu del 3D.",
 
         // Posts
-        pLlaverosImanes: "Llaveros e imanes",
-        pCalavera: "Calavera de dos colores",
-        pVideoCalavera: "Video de la calavera de dos colores",
+        pLlaverosImanes: "Representación de los tipos de Merchandaising que mas hacemos.",
+        pVortex: "El otro dia nos metimos en un proyecto que nos propusieron muy interesante, hacer una coche de F1 para una carrera de aceleracion de la que quedamos 2do a muy pocas milesimas. <br>¡¡ I nos hicimos esponsors de Vortex !!.",
+        pCalavera: "Lapiceros de escritorio de todo tipo y personalizado explicanos tu idea. <br>¡¡Realmente este cambia de color!! Pídenos el color/colores que quieras.",
         pLlaveroBarça: "Llavero del Barça",
-        pTrofeoEscalabirres: "Trofeo del Escalabirres",
-        pMandalorian: "Figura de The Mandalorian con Grogu",
-        pMandalorianSinPintar: "Figura de The Mandalorian sin pintar",
-        pMandalorianVideo: "Recien sacado de la impresora 3D",
-        pTerminator: "Terminator con sensor",
-        pPredator: "Poster de Predator",
-        pMarcoPredator: "Cuadro para el poster de Predator",
-        pBetyBoop: "Betty Boop",
+        pTrofeoEscalabirres: "Trofeos que te diseñamos y/o te los imprimimos, estos fueron renombrados en las fiestas.",
+        pMandalorian: "Figuras de The Mandalorian i Grogu Figura para pintar, dinos tu super héroe o personaje preferido, seguro que disfrutaras pintándolo.",
+        pTerminator: "Un cliente nos pidió una modificación que acabo siendo un proyecto muyyyy chulo, sensor proximidad, led a batería para colgar donde se quiera y meses de autonomía.",
+        pMarcoPredator: "Litografias y cuadros de todo tipo y tamaño, color o para pintar como se quiera.",
+        pBetyBoop: "Figuras de todo tipo y tamaño, dinos que quieres y seguro lo encontraremos, no los diseñamos pero sabemos quien lo hace muy bien. <br>En este caso la Betty Boop ",
         pGuitarrista: "Guitarrista",
         pGohan: "Figura de Gohan Bestia",
         pNoviaCadaver: "Figura terminada de la Novia cadaver pintada",
@@ -140,6 +149,7 @@ const traducciones = {
         // Navbar
         inicio: "Inici",
         blog: "Blog",
+        empresa: "Empresa",
         nosotros: "Sobre nosaltres",
         contactanos: "Contacta'ns",
 
@@ -202,20 +212,17 @@ const traducciones = {
         pRecuerda: "Ens mou la passió per la impressió 3D i és ara quan ens disposem a monetitzar part del nostre hobby. En aquest apartat ho barregem tot: el personal i el comercial. Aquí només veuràs projectes passats, presents i futurs de tota mena i condició, un chowseu del 3D.",
 
         // Posts
-        pLlaverosImanes: "Clauers i imants",
-        pCalavera: "Calavera de dos colors",
-        pVideoCalavera: "Vídeo de la calavera de dos colors",
+        pLlaverosImanes: "Representació dels tipus de marxandatge que més fem.",
+        pVortex: "L'altre dia ens vam ficar en un projecte que ens van proposar molt interessant, fer un cotxe de F1 per a una cursa d'acceleració de la que vam quedar 2on a molt poques mil·lèsimes. <br>I ens vam fer esponsors de Vortex!!.",
+        pCalavera: "Portallapis d'escriptori de tota mena i personalitzat, explica'ns la teva idea. <br>¡¡Aquest realment canvia de color!! Demana'ns el color o colors que vulguis.",
         pLlaveroBarça: "Clauer del Barça",
-        pTrofeoEscalabirres: "Trofeu de l'Escalabirres",
-        pMandalorian: "Figura de The Mandalorian amb Grogu",
-        pMandalorianSinPintar: "Figura de The Mandalorian sense pintar",
-        pMandalorianVideo: "Acabat de sortir de la impressora 3D",
-        pTerminator: "Terminator amb sensor",
-        pPredator: "Pòster de Predator",
-        pMarcoPredator: "Marc per al pòster de Predator",
-        pBetyBoop: "Betty Boop",
+        pTrofeoEscalabirres: "Trofeus que et dissenyem i/o t'imprimim. Aquests van ser reanomenats durant les festes.",
+        pMandalorian: "Figures de The Mandalorian i Grogu. Figura per pintar. Digues-nos quin és el teu superheroi o personatge preferit, segur que gaudiràs pintant-lo.",
+        pTerminator: "Un client ens va demanar una modificació que va acabar sent un projecte moooolt xulo: sensor de proximitat, llum LED amb bateria per penjar on es vulgui i mesos d'autonomia.",
+        pMarcoPredator: "Litografies i quadres de tota mena i mida, en color o per pintar com es vulgui.",
+        pBetyBoop: "Figures de tota mena i mida. Digues-nos què vols i segur que ho trobarem. No les dissenyem nosaltres, però sabem qui ho fa molt bé. <br>En aquest cas, la Betty Boop.",
         pGuitarrista: "Guitarrista",
-        pGohan: "Figura de Gohan Bestia",
+        pGohan: "Figura de Gohan Bèstia",
         pNoviaCadaver: "Figura acabada de la Núvia Cadàver pintada",
         pNaruto: "Figura de Naruto per peces",
         pNarutoVideo: "Figura de Naruto acabada",
