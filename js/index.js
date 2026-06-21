@@ -118,8 +118,8 @@ const traducciones = {
 
         // Posts
         pLlaverosImanes: "Representación de los tipos de Merchandaising que mas hacemos.",
-        pVortex: "El otro dia nos metimos en un proyecto que nos propusieron muy interesante, hacer una coche de F1 para una carrera de aceleracion de la que quedamos 2do a muy pocas milesimas. <br>¡¡ I nos hicimos esponsors de Vortex !!.",
-        pCalavera: "Lapiceros de escritorio de todo tipo y personalizado explicanos tu idea. <br>¡¡Realmente este cambia de color!! Pídenos el color/colores que quieras.",
+        pVortex: "Nos propusieron un proyecto muy interesante, hacer una coche para Steam Reacing y nos cnvertimos en uno de los patrocinadores de la escuderia Vorttex. <br>Un placer trabajar con vosotros.",
+        pCalavera: "Lapiceros de escritorio de todo tipo y personalizado explicanos tu idea.",
         pLlaveroBarça: "Llavero del Barça",
         pTrofeoEscalabirres: "Trofeos que te diseñamos y/o te los imprimimos, estos fueron renombrados en las fiestas.",
         pMandalorian: "Figuras de The Mandalorian i Grogu Figura para pintar, dinos tu super héroe o personaje preferido, seguro que disfrutaras pintándolo.",
@@ -213,8 +213,8 @@ const traducciones = {
 
         // Posts
         pLlaverosImanes: "Representació dels tipus de marxandatge que més fem.",
-        pVortex: "L'altre dia ens vam ficar en un projecte que ens van proposar molt interessant, fer un cotxe de F1 per a una cursa d'acceleració de la que vam quedar 2on a molt poques mil·lèsimes. <br>I ens vam fer esponsors de Vortex!!.",
-        pCalavera: "Portallapis d'escriptori de tota mena i personalitzat, explica'ns la teva idea. <br>¡¡Aquest realment canvia de color!! Demana'ns el color o colors que vulguis.",
+        pVortex: "Ens van proposar un projecte molt interessant, fer un cotxe per a Steam Reacing i ens vam convertir en un dels patrocinadors de l'escuderia Vorttex. <br>Un plaer treballar amb vosaltres.",
+        pCalavera: "Portallapis d'escriptori de tota mena i personalitzat, explica'ns la teva idea.",
         pLlaveroBarça: "Clauer del Barça",
         pTrofeoEscalabirres: "Trofeus que et dissenyem i/o t'imprimim. Aquests van ser reanomenats durant les festes.",
         pMandalorian: "Figures de The Mandalorian i Grogu. Figura per pintar. Digues-nos quin és el teu superheroi o personatge preferit, segur que gaudiràs pintant-lo.",
