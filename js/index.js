@@ -117,6 +117,8 @@ const traducciones = {
         pRecuerda: "Nos mueve la pasión por la impresión 3D y es ahora cuando nos disponemos a monetizar parte de nuestro hobby. En este apartado lo mezclamos todo: lo personal y lo comercial. Aquí solo verás proyectos pasados, presentes y futuros de toda índole y condición, un chowseu del 3D.",
 
         // Posts
+        pCopaFutbol2026: "Hemos hecho la Copa del Mundo de fútbol para que, cuando llegara el momento, pudiéramos alzarla con orgullo. ¡Y así ha sido!",
+        pDJ: "Nos propusieron un proyecto muy chulo para una tabla de mezclas.",
         pLlaverosImanes: "Representación de los tipos de Merchandaising que mas hacemos.",
         pVortex: "Nos propusieron un proyecto muy interesante, hacer una coche para Steam Reacing y nos cnvertimos en uno de los patrocinadores de la escuderia Vorttex. <br>Un placer trabajar con vosotros.",
         pCalavera: "Lapiceros de escritorio de todo tipo y personalizado explicanos tu idea.",
@@ -175,7 +177,7 @@ const traducciones = {
         pCreatividad: "Donem vida a les teves idees i oferim solucions creatives",
         h3Diseño: "Disseny",
         pDiseño: "Desenvolupem solucions amb un dissenyador especialitzat",
-        h3Mercha: "Merxandatge",
+        h3Mercha: "Merxa",
         pMercha: "Dissenyem i fabriquem clauers, imants, targetes, marcs, figures i personalitzats",
 
         // Sobre nosotros
@@ -212,6 +214,8 @@ const traducciones = {
         pRecuerda: "Ens mou la passió per la impressió 3D i és ara quan ens disposem a monetitzar part del nostre hobby. En aquest apartat ho barregem tot: el personal i el comercial. Aquí només veuràs projectes passats, presents i futurs de tota mena i condició, un chowseu del 3D.",
 
         // Posts
+        pCopaFutbol2026: "Hem fet la Copa del Món de futbol perquè, quan arribés el moment, la poguéssim alçar amb orgull. I així ha estat!",
+        pDJ: "Ens van proposar un projecte molt xulo per a una taula de mescles.",
         pLlaverosImanes: "Representació dels tipus de marxandatge que més fem.",
         pVortex: "Ens van proposar un projecte molt interessant, fer un cotxe per a Steam Reacing i ens vam convertir en un dels patrocinadors de l'escuderia Vorttex. <br>Un plaer treballar amb vosaltres.",
         pCalavera: "Portallapis d'escriptori de tota mena i personalitzat, explica'ns la teva idea.",

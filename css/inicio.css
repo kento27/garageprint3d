@@ -168,6 +168,45 @@ nav p, .menuPC ul{
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+.offcanvas-body hr{
+    background-color: #F2933A;
+    opacity: 1;
+    height: 3px;
+    border: none;
+}
+
+.datosMenu{
+    margin-top: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    justify-self: start;
+}
+
+.datosMenu .datos{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.datosMenu a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.logoMarcaAgua{
+    position: absolute;
+    width: 250px;
+    right: -80px;
+    bottom: -80px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 @media (max-width: 1023px){
 
     .menu{
@@ -195,7 +234,7 @@ nav p, .menuPC ul{
 
 .hero {
     position: relative;
-    height: 60vh;
+    min-height: 60vh;
     background-color: #111827;
     overflow: hidden;
 }
@@ -204,12 +243,13 @@ nav p, .menuPC ul{
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
     opacity: 0.3;
 }
 
+/* Imagen solo ocupa la mitad en PC */
 @media (min-width: 768px) {
     .hero-img {
         width: 50%;
@@ -230,12 +270,24 @@ nav p, .menuPC ul{
 .hero-content {
     position: relative;
     z-index: 10;
-    height: 100%;
+
+    min-height: 60vh;
+
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
     gap: 30px;
+
+    width: 100%;
+    box-sizing: border-box;
+
     padding-left: 120px;
+    padding-right: 30px;
+}
+
+.hero-logo {
+    flex-shrink: 0;
 }
 
 .hero-logo img {
@@ -244,78 +296,114 @@ nav p, .menuPC ul{
 }
 
 /* ----- TEXTO PORTADA ----- */
+
 .hero-text {
-    max-width: 36rem;
+    max-width: 600px;
 }
 
 .hero-text h1 {
-    font-size: 2.25rem;
+    font-size: 3rem;
     font-weight: bold;
-    color: #F2933A;
+    color: white;
     margin-bottom: 1rem;
+
+    overflow-wrap: break-word;
 }
 
 .hero-text p {
     font-size: 1.125rem;
     color: #d1d5db;
     margin-bottom: 0;
+
+    overflow-wrap: break-word;
 }
 
-@media (min-width: 768px) {
+
+/* ----- TABLET ----- */
+
+@media (max-width: 1023px) {
+
+    .hero-content {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+
+    .hero-logo img {
+        width: 150px;
+    }
 
     .hero-text h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+
 }
 
-/* ----- RESPONSIVE MOVIL ----- */
+
+/* ----- MOVIL ----- */
+
 @media (max-width: 767px) {
 
     .hero {
         height: auto;
-        padding: 80px 0px;
+        min-height: 0;
+        padding: 60px 20px;
     }
 
     .hero-content {
+        min-height: 0;
+
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         text-align: center;
         gap: 20px;
 
-        /* AÑADE ESTO */
-        padding-left: 0;
-        padding-right: 0;
-        justify-content: center;
+        padding: 0;
     }
 
     .hero-logo img {
         width: 140px;
     }
 
+    .hero-text {
+        width: 100%;
+        max-width: 600px;
+    }
+
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
     }
 }
 
-.hero-text h1 {
-  font-size: 2.25rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 1rem;
+
+/* ----- MOVILES MUY PEQUEÑOS ----- */
+
+@media (max-width: 400px) {
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero-logo img {
+        width: 110px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+
 }
 
-@media (min-width: 768px) {
-  .hero-text h1 {
-    font-size: 3rem;
-  }
-}
-
-.hero-text p {
-  font-size: 1.125rem;
-  color: #d1d5db;
-  margin-bottom: 2rem;
-}
-
-.hero-buttons {
+/* .hero-buttons {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -359,7 +447,7 @@ nav p, .menuPC ul{
 
 .btn-secondary:hover {
   background-color: rgba(255, 255, 255, 0.1);
-}
+} */
 
 /* ----- PORTADA ----- */
 /* header{
@@ -979,6 +1067,12 @@ footer h2{
     flex-direction: column;
     justify-content:end;
     justify-self: end;
+}
+
+.div3 a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1em;
 }
 
 .datos{

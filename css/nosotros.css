@@ -124,10 +124,6 @@ nav p, .menuPC ul{
     justify-self: end;
 }
 
-.datoMenu{
-    margin: 0px !important;
-}
-
 .menuPC ul{
     display: flex;
     text-decoration: none;
@@ -143,6 +139,10 @@ nav p, .menuPC ul{
 .menuCont{
     display: flex;
     gap: 30px;
+}
+
+.datoMenu{
+    margin: 0px !important;
 }
 
 .menuCont p{
@@ -162,6 +162,45 @@ nav p, .menuPC ul{
     background-color: #C2690F;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.offcanvas-body hr{
+    background-color: #F2933A;
+    opacity: 1;
+    height: 3px;
+    border: none;
+}
+
+.datosMenu{
+    margin-top: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    justify-self: start;
+}
+
+.datosMenu .datos{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.datosMenu a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.logoMarcaAgua{
+    position: absolute;
+    width: 250px;
+    right: -80px;
+    bottom: -80px;
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 @media (max-width: 1023px){
@@ -322,6 +361,12 @@ footer h2{
     flex-direction: column;
     justify-content:end;
     justify-self: end;
+}
+
+.div3 a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1em;
 }
 
 .datos{

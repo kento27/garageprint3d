@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- ---- MENU ---- -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-dark bg-body-tertiary">
         <div class="menu">
             <div class="logoIdiomas">
                 <a class="navbar-brand logoM" href="index.html">
@@ -19,6 +19,7 @@
                     <img src="img/esp.png" alt="Español" onclick="cambioIdioma('es')">
                     <img src="img/cat.jpg" alt="Català" onclick="cambioIdioma('ca')">
                 </div>
+                <a href=""></a>
             </div>
             <div class="menuPC">
                 <ul>
@@ -28,6 +29,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html" data-translate="blog">Blog</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="empresa.html" data-translate="empresa">Empresa</a>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
                     </li>
@@ -41,37 +45,49 @@
                 <a class="botonContactMenu" href="contactanos.html" data-translate="contactanos">Contactanos</a>
             </div>
             <div class="botonMenuPeke">
-                <div class="datos datoMenu">
-                    <img src="img/whatsapp.png" alt="">
-                    <p>686 15 35 94</p>
-                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-end text-bg-dark desplegableMenu" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Garage Print 3D</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
+                        <li class="nav-item navItemMovil">
                             <a class="nav-link active" aria-current="page" href="index.html" data-translate="inicio">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html" data-translate="blog">Blog</a>
+                        <li class="nav-item navItemMovil">
+                            <a class="nav-link active" href="blog.html" data-translate="blog">Blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
+                        <li class="nav-item navItemMovil">
+                            <a class="nav-link active" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html" data-translate="contactanos">Contacto</a>
+                        <li class="nav-item navItemMovil">
+                            <a class="nav-link active" href="contactanos.html" data-translate="contactanos">Contacto</a>
                         </li>
                     </ul>
+                    <hr>
+                    <div class="datosMenu">
+                        <div class="datos dato1">
+                            <img src="img/whatsapp.png" alt="">
+                            <p>686 15 35 94</p>
+                        </div>
+                        <a class="datos dato2" href="https://www.instagram.com/garage3dprint/">
+                            <img src="img/insta.png" alt="">
+                            <p>garageprint3d</p>
+                        </a>
+                        <div class="datos dato3">
+                            <img src="img/mail.png" alt="">
+                            <p>garageprint3d@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
+                <img src="img/logo_naranja_sinfondo.png" class="logoMarcaAgua" alt="Garage Print 3D marca de agua">
             </div>
         </div>
     </nav>
@@ -144,10 +160,10 @@
                 <img src="img/whatsapp.png" alt="">
                 <p>686 15 35 94</p>
             </div>
-            <div class="datos dato2">
+            <a class="datos dato2" href="https://www.instagram.com/garage3dprint/">
                 <img src="img/insta.png" alt="">
                 <p>garageprint3d</p>
-            </div>
+            </a>
             <div class="datos dato3">
                 <img src="img/mail.png" alt="">
                 <p>garageprint3d@gmail.com</p>

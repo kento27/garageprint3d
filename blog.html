@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- ---- MENU ---- -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-dark bg-body-tertiary">
         <div class="menu">
             <div class="logoIdiomas">
                 <a class="navbar-brand logoM" href="index.html">
@@ -20,6 +20,7 @@
                     <img src="img/esp.png" alt="Español" onclick="cambioIdioma('es')">
                     <img src="img/cat.jpg" alt="Català" onclick="cambioIdioma('ca')">
                 </div>
+                <a href=""></a>
             </div>
             <div class="menuPC">
                 <ul>
@@ -29,6 +30,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html" data-translate="blog">Blog</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="empresa.html" data-translate="empresa">Empresa</a>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
                     </li>
@@ -42,37 +46,49 @@
                 <a class="botonContactMenu" href="contactanos.html" data-translate="contactanos">Contactanos</a>
             </div>
             <div class="botonMenuPeke">
-                <div class="datos datoMenu">
-                    <img src="img/whatsapp.png" alt="">
-                    <p>686 15 35 94</p>
-                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-end text-bg-dark desplegableMenu" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Garage Print 3D</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
+                        <li class="nav-item navItemMovil">
                             <a class="nav-link active" aria-current="page" href="index.html" data-translate="inicio">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html" data-translate="blog">Blog</a>
+                        <li class="nav-item navItemMovil">
+                            <a class="nav-link active" href="blog.html" data-translate="blog">Blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
+                        <li class="nav-item navItemMovil">
+                            <a class="nav-link active" href="nosotros.html" data-translate="nosotros">Sobre nosotros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html" data-translate="contactanos">Contacto</a>
+                        <li class="nav-item navItemMovil">
+                            <a class="nav-link active" href="contactanos.html" data-translate="contactanos">Contacto</a>
                         </li>
                     </ul>
+                    <hr>
+                    <div class="datosMenu">
+                        <div class="datos dato1">
+                            <img src="img/whatsapp.png" alt="">
+                            <p>686 15 35 94</p>
+                        </div>
+                        <a class="datos dato2" href="https://www.instagram.com/garage3dprint/">
+                            <img src="img/insta.png" alt="">
+                            <p>garageprint3d</p>
+                        </a>
+                        <div class="datos dato3">
+                            <img src="img/mail.png" alt="">
+                            <p>garageprint3d@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
+                <img src="img/logo_naranja_sinfondo.png" class="logoMarcaAgua" alt="Garage Print 3D marca de agua">
             </div>
         </div>
     </nav>
@@ -93,6 +109,56 @@
     <!-- ---- BLOG ---- -->
     <section class="blog">
 
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img src="img/copaFutbol2026/copa1.jpeg" alt="">
+                    <img src="img/copaFutbol2026/copa2.jpeg" alt="">
+                    <img src="img/copaFutbol2026/copa3.jpeg" alt="">
+                    <img src="img/copaFutbol2026/copa4.jpeg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p data-translate="pCopaFutbol2026">Hemos hecho la Copa del Mundo de fútbol para que, cuando llegara el momento, pudiéramos alzarla con orgullo. ¡Y así ha sido!</p>
+
+        </article>
+
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <video controls autoplay muted loop playsinline>
+                        <source src="videos/DJ/videoDJ2.mp4" type="video/mp4">
+                    </video>
+                    <img src="img/DJ/DJ1.jpeg" alt="">
+                    <img src="img/DJ/DJ2.jpg" alt="">
+                    <img src="img/DJ/DJ3.jpg" alt="">
+                    <img src="img/DJ/DJ4.JPG" alt="">
+                    <img src="img/DJ/DJ5.jpeg" alt="">
+                    <img src="img/DJ/DJ6.jpeg" alt="">
+                    <img src="img/DJ/DJ7.jpeg" alt="">
+                    <img src="img/DJ/DJ8.jpeg" alt="">
+                    <img src="img/DJ/DJ9.jpeg" alt="">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p data-translate="pDJ">Nos propusieron un proyecto muy chulo para una tabla de mezclas</p>
+
+        </article>
+
         <!-- POST 1 (Carrusel) Llaveros e imanes -->
         <article class="post">
 
@@ -101,8 +167,8 @@
                 <button class="arrow left">&#10094;</button>
 
                 <div class="carousel-track">
-                    <img src="img/llaverosImanes1.jpg" alt="">
-                    <img src="img/llaverosImanes2.jpg" alt="">
+                    <img src="img/Merchan/llaverosImanes1.jpg" alt="">
+                    <img src="img/Merchan/llaverosImanes2.jpg" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
@@ -122,17 +188,17 @@
 
                 <div class="carousel-track">
                     <video controls autoplay muted loop playsinline>
-                        <source src="videos/vortex.mp4" type="video/mp4">
+                        <source src="videos/vortex/vortex.mp4" type="video/mp4">
                     </video>
-                    <img src="img/vortex2.jpg" alt="">
-                    <img src="img/vortex3.jpg" alt="">
-                    <img src="img/vortex4.jpg" alt="">
-                    <img src="img/vortex5.jpg" alt="">
-                    <img src="img/vortex6.jpg" alt="">
-                    <img src="img/vortex7.jpeg" alt="">
-                    <img src="img/vortex8.jpeg" alt="">
+                    <img src="img/vortex/vortex2.jpg" alt="">
+                    <img src="img/vortex/vortex3.jpg" alt="">
+                    <img src="img/vortex/vortex4.jpg" alt="">
+                    <img src="img/vortex/vortex5.jpg" alt="">
+                    <img src="img/vortex/vortex6.jpg" alt="">
+                    <img src="img/vortex/vortex7.jpeg" alt="">
+                    <img src="img/vortex/vortex8.jpeg" alt="">
                     <video controls autoplay muted loop playsinline>
-                        <source src="videos/vortex2.mp4" type="video/mp4">
+                        <source src="videos/vortex/vortex2.mp4" type="video/mp4">
                     </video>
                 </div>
 
@@ -153,12 +219,12 @@
 
                 <div class="carousel-track">
                     <video controls autoplay muted loop playsinline>
-                        <source src="videos/calavera.mp4" type="video/mp4">
+                        <source src="videos/calavera/calavera.mp4" type="video/mp4">
                     </video>
-                    <img src="img/calavera1.jpg" alt="">
-                    <img src="img/calavera2.jpg" alt="">
-                    <img src="img/calavera3.jpg" alt="">
-                    <img src="img/calavera4.jpg" alt="">
+                    <img src="img/calavera/calavera.jpg" alt="">
+                    <img src="img/calavera/calavera2.jpg" alt="">
+                    <img src="img/calavera/calavera3.jpg" alt="">
+                    <img src="img/calavera/calavera4.jpg" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
@@ -172,14 +238,14 @@
         <!-- POST 4 (Video) Llavero del Barça -->
         <article class="post">
             <video controls autoplay muted loop playsinline>
-                <source src="videos/llaverobarça.mp4" type="video/mp4">
+                <source src="videos/Merchan/llaverobarça.mp4" type="video/mp4">
             </video>
             <p data-translate="pLlaveroBarça">Llavero del Barça</p>
         </article>
 
         <!-- POST 5 (img) Escalabirres -->
         <article class="post">
-            <img src="img/trofeoEscalabirres.jpg" alt="">
+            <img src="img/escalabirres/trofeoEscalabirres.jpg" alt="">
             <p data-translate="pTrofeoEscalabirres">Trofeos que te diseñamos y/o te los imprimimos, estos fueron renombrados en las fiestas.</p>
         </article>
 
@@ -192,12 +258,12 @@
 
                 <div class="carousel-track">
                     <video controls autoplay muted loop playsinline>
-                        <source src="videos/mandalorianVideo.mp4" type="video/mp4">
+                        <source src="videos/mandalorian/mandalorianVideo.mp4" type="video/mp4">
                     </video>
-                    <img src="img/mandalorian1.jpg" alt="">
-                    <img src="img/mandalorian2.jpg" alt="">
-                    <img src="img/mandalorian3.jpg" alt="">
-                    <img src="img/mandalorian.jpg" alt="">
+                    <img src="img/mandalorian/mandalorian1.jpg" alt="">
+                    <img src="img/mandalorian/mandalorian2.jpg" alt="">
+                    <img src="img/mandalorian/mandalorian3.jpg" alt="">
+                    <img src="img/mandalorian/mandalorian.jpg" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
@@ -216,9 +282,9 @@
                 <button class="arrow left">&#10094;</button>
 
                 <div class="carousel-track">
-                    <img src="img/terminator1.jpg" alt="">
-                    <img src="img/terminator2.jpg" alt="">
-                    <img src="img/terminator3.jpg" alt="">
+                    <img src="img/terminator/terminator1.jpg" alt="">
+                    <img src="img/terminator/terminator2.jpg" alt="">
+                    <img src="img/terminator/terminator3.jpg" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
@@ -231,7 +297,7 @@
 
         <!-- POST 8 (img) Marco Predator -->
         <article class="post">
-            <img src="img/predatorConCuadro.jpg" alt="">
+            <img src="img/predator/predatorConCuadro.jpg" alt="">
             <p data-translate="pMarcoPredator">Litografias y cuadros de todo tipo y tamaño, color o para pintar como se quiera.</p>
         </article>
 
@@ -243,10 +309,10 @@
                 <button class="arrow left">&#10094;</button>
 
                 <div class="carousel-track">
-                    <img src="img/betyboo1.jpg" alt="">
-                    <img src="img/betyboo2.jpg" alt="">
-                    <img src="img/betyboo3.jpg" alt="">
-                    <img src="img/betyboo4.jpg" alt="">
+                    <img src="img/bettyboo/betyboo1.jpg" alt="">
+                    <img src="img/bettyboo/betyboo2.jpg" alt="">
+                    <img src="img/bettyboo/betyboo3.jpg" alt="">
+                    <img src="img/bettyboo/betyboo4.jpg" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
@@ -265,8 +331,8 @@
                 <button class="arrow left">&#10094;</button>
 
                 <div class="carousel-track">
-                    <img src="img/guitarrista1.jpg" alt="">
-                    <img src="img/guitarrista2.jpg" alt="">
+                    <img src="img/guitarrista/guitarrista1.jpg" alt="">
+                    <img src="img/guitarrista/guitarrista2.jpg" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
@@ -279,7 +345,7 @@
 
         <!-- POST 11 (img) Gohan -->
         <article class="post">
-            <img src="img/gohan.jpg" alt="">
+            <img src="img/gohan/gohan.jpg" alt="">
             <p data-translate="pGohan">Figura de Gohan Bestia</p>
         </article>
 
@@ -291,14 +357,14 @@
                 <button class="arrow left">&#10094;</button>
 
                 <div class="carousel-track">
-                    <img src="img/noviaCadaver1.jpg" alt="">
-                    <img src="img/noviaCadaver2.jpg" alt="">
-                    <img src="img/noviaCadaver3.jpg" alt="">
-                    <img src="img/noviaCadaver4.jpg" alt="">
-                    <img src="img/noviaCadaver5.jpg" alt="">
-                    <img src="img/noviaCadaver6.jpg" alt="">
-                    <img src="img/noviaCadaver7.jpg" alt="">
-                    <img src="img/noviaCadaver8.jpg" alt="">
+                    <img src="img/noviaCadaver/noviaCadaver1.jpg" alt="">
+                    <img src="img/noviaCadaver/noviaCadaver2.jpg" alt="">
+                    <img src="img/noviaCadaver/noviaCadaver3.jpg" alt="">
+                    <img src="img/noviaCadaver/noviaCadaver4.jpg" alt="">
+                    <img src="img/noviaCadaver/noviaCadaver5.jpg" alt="">
+                    <img src="img/noviaCadaver/noviaCadaver6.jpg" alt="">
+                    <img src="img/noviaCadaver/noviaCadaver7.jpg" alt="">
+                    <img src="img/noviaCadaver/noviaCadaver8.jpg" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
@@ -318,15 +384,15 @@
 
                 <div class="carousel-track">
                     <video controls autoplay muted loop playsinline>
-                        <source src="videos/naruto.mp4" type="video/mp4">
+                        <source src="videos/naruto/naruto.mp4" type="video/mp4">
                     </video>
-                    <img src="img/naruto1.jpg" alt="">
-                    <img src="img/naruto2.jpg" alt="">
-                    <img src="img/naruto3.jpg" alt="">
-                    <img src="img/naruto4.jpg" alt="">
-                    <img src="img/naruto5.jpg" alt="">
-                    <img src="img/naruto6.jpg" alt="">
-                    <img src="img/narutofoto.png" alt="">
+                    <img src="img/naruto/naruto1.jpg" alt="">
+                    <img src="img/naruto/naruto2.jpg" alt="">
+                    <img src="img/naruto/naruto3.jpg" alt="">
+                    <img src="img/naruto/naruto4.jpg" alt="">
+                    <img src="img/naruto/naruto5.jpg" alt="">
+                    <img src="img/naruto/naruto6.jpg" alt="">
+                    <img src="img/naruto/narutofoto.png" alt="">
                 </div>
 
                 <button class="arrow right">&#10095;</button>
@@ -370,10 +436,10 @@
                 <img src="img/whatsapp.png" alt="">
                 <p>686 15 35 94</p>
             </div>
-            <div class="datos dato2">
+            <a class="datos dato2" href="https://www.instagram.com/garage3dprint/">
                 <img src="img/insta.png" alt="">
                 <p>garageprint3d</p>
-            </div>
+            </a>
             <div class="datos dato3">
                 <img src="img/mail.png" alt="">
                 <p>garageprint3d@gmail.com</p>
