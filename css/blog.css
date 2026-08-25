@@ -258,13 +258,30 @@ header h1{
     position: relative;
 }
 
+/* ----- tablet y movil ----- */
 @media (max-width: 767px){
+
     header{
-        height: 30vh;
+        height: 25vh;
+        padding: 20px;
     }
 
-    h1{
-        font-size: 3em;
+    header h1{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+}
+
+
+/* ----- moviles pequeños ----- */
+@media (max-width: 400px){
+
+    header{
+        height: 22vh;
+    }
+
+    header h1{
+        font-size: 2rem;
     }
 }
 

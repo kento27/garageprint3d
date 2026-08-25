@@ -117,6 +117,7 @@ const traducciones = {
         pRecuerda: "Nos mueve la pasión por la impresión 3D y es ahora cuando nos disponemos a monetizar parte de nuestro hobby. En este apartado lo mezclamos todo: lo personal y lo comercial. Aquí solo verás proyectos pasados, presentes y futuros de toda índole y condición, un chowseu del 3D.",
 
         // Posts
+        pTeseracto: "¿Recuerdas el teseracto? Nuestro último proyecto de escritorio.",
         pCopaFutbol2026: "Hemos hecho la Copa del Mundo de fútbol para que, cuando llegara el momento, pudiéramos alzarla con orgullo. ¡Y así ha sido!",
         pDJ: "Nos propusieron un proyecto muy chulo para una tabla de mezclas.",
         pLlaverosImanes: "Representación de los tipos de Merchandaising que mas hacemos.",
@@ -214,6 +215,7 @@ const traducciones = {
         pRecuerda: "Ens mou la passió per la impressió 3D i és ara quan ens disposem a monetitzar part del nostre hobby. En aquest apartat ho barregem tot: el personal i el comercial. Aquí només veuràs projectes passats, presents i futurs de tota mena i condició, un chowseu del 3D.",
 
         // Posts
+        pTeseracto: "Recordes el tesseracte? El nostre últim projecte d'escriptori.",
         pCopaFutbol2026: "Hem fet la Copa del Món de futbol perquè, quan arribés el moment, la poguéssim alçar amb orgull. I així ha estat!",
         pDJ: "Ens van proposar un projecte molt xulo per a una taula de mescles.",
         pLlaverosImanes: "Representació dels tipus de marxandatge que més fem.",
