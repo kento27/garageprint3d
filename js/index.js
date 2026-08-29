@@ -61,6 +61,7 @@ const traducciones = {
         // Portada
         h1Portada: "Impresión 3D Personalizada",
         pPortada: "Diseña y pide tu pieza personalizada con calidad profesional.<br>(Web en construcción, disculpa las molestias)",
+        btnTecnico: "Técnico",
 
         // Contador
         contadorMiniTitulo: "VISITAS",
@@ -159,6 +160,7 @@ const traducciones = {
         // Portada
         h1Portada: "Impressió 3D Personalitzada",
         pPortada: "Dissenya i demana la teva peça personalitzada amb qualitat professional.<br>(Web en construcció, disculpa les molèsties)",
+        btnTecnico: "Tècnic",
 
         // Contador
         contadorMiniTitulo: "VISITES",
