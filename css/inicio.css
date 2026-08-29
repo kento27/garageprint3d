@@ -378,6 +378,11 @@ nav p, .menuPC ul{
     .hero-text p {
         font-size: 1rem;
     }
+
+    .hero-buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -401,6 +406,57 @@ nav p, .menuPC ul{
         font-size: 0.95rem;
     }
 
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.hero-buttons a{
+    text-decoration: none;
+    padding: 12px 28px;
+    font-size: 1.15rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+
+/* BOTON PRINCIPAL */
+
+.hero-buttons .btn-primary{
+    background-color: #F2933A;
+    color: #111827;
+    border: 2px solid #F2933A;
+}
+
+.hero-buttons .btn-primary:hover{
+    background-color: #C2690F;
+    border-color: #C2690F;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* BOTON SECUNDARIO */
+
+.hero-buttons .btn-secondary{
+    background-color: transparent;
+    color: #F2933A;
+    border: 2px solid #F2933A;
+}
+
+.hero-buttons .btn-secondary:hover{
+    background-color: #F2933A;
+    color: #111827;
+
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(242, 147, 58, 0.2);
 }
 
 /* .hero-buttons {
