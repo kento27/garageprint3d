@@ -54,6 +54,8 @@ const traducciones = {
         // Navbar
         inicio: "Inicio",
         blog: "Blog",
+        bLudico: "Blog Lúdico",
+        bTecnico: "Blog Técnico",
         empresa: "Empresa",
         nosotros: "Sobre nosotros",
         contactanos: "Contactanos",
@@ -62,6 +64,7 @@ const traducciones = {
         h1Portada: "Impresión 3D Personalizada",
         pPortada: "Diseña y pide tu pieza personalizada con calidad profesional.<br>(Web en construcción, disculpa las molestias)",
         btnTecnico: "Técnico",
+        btnBlogTecnico: "Blog Técnico",
 
         // Contador
         contadorMiniTitulo: "VISITAS",
@@ -112,10 +115,13 @@ const traducciones = {
         aFooterNosotros: "Sobre Nosotros",
         aFooterContactanos: "Contactanos",
 
-        // -- Blog --
-        h1Blog: "Blog",
+        // blog ludico
+        h1Blog: "Blog Lúdico",
         h2Recuerda: "Recuerda",
         pRecuerda: "Nos mueve la pasión por la impresión 3D y es ahora cuando nos disponemos a monetizar parte de nuestro hobby. En este apartado lo mezclamos todo: lo personal y lo comercial. Aquí solo verás proyectos pasados, presentes y futuros de toda índole y condición, un chowseu del 3D.",
+
+        // blog tecnico
+        h1BlogTecnico: "Blog Técnico",
 
         // Posts
         pTeseracto: "¿Recuerdas el teseracto? Nuestro último proyecto de escritorio.",
@@ -136,6 +142,9 @@ const traducciones = {
         pNaruto: "Figura de Naruto por piezas",
         pNarutoVideo: "Figura de Naruto terminada",
 
+        // Posts Tecnicos
+        pPiezaExtrusion: "Pieza tecnica de soporte",
+
         // -- Sobre nosotros --
         // Sobre nosotros
         h1Nosotros: "Sobre nosotros",
@@ -153,6 +162,8 @@ const traducciones = {
         // Navbar
         inicio: "Inici",
         blog: "Blog",
+        bLudico: "Blog Lúdic",
+        bTecnico: "Blog Tècnic",
         empresa: "Empresa",
         nosotros: "Sobre nosaltres",
         contactanos: "Contacta'ns",
@@ -161,6 +172,7 @@ const traducciones = {
         h1Portada: "Impressió 3D Personalitzada",
         pPortada: "Dissenya i demana la teva peça personalitzada amb qualitat professional.<br>(Web en construcció, disculpa les molèsties)",
         btnTecnico: "Tècnic",
+        btnBlogTecnico: "Blog Tècnic",
 
         // Contador
         contadorMiniTitulo: "VISITES",
@@ -211,10 +223,13 @@ const traducciones = {
         aFooterNosotros: "Sobre Nosaltres",
         aFooterContactanos: "Contacta'ns",
 
-        // -- Blog --
-        h1Blog: "Blog",
+        // Blog ludico
+        h1Blog: "Blog Lúdic",
         h2Recuerda: "Recorda",
         pRecuerda: "Ens mou la passió per la impressió 3D i és ara quan ens disposem a monetitzar part del nostre hobby. En aquest apartat ho barregem tot: el personal i el comercial. Aquí només veuràs projectes passats, presents i futurs de tota mena i condició, un chowseu del 3D.",
+
+        // blog tecnico
+        h1BlogTecnico: "Blog Tècnic",
 
         // Posts
         pTeseracto: "Recordes el tesseracte? El nostre últim projecte d'escriptori.",
@@ -234,6 +249,9 @@ const traducciones = {
         pNoviaCadaver: "Figura acabada de la Núvia Cadàver pintada",
         pNaruto: "Figura de Naruto per peces",
         pNarutoVideo: "Figura de Naruto acabada",
+
+        // Posts Tecnicos
+        pPiezaExtrusion: "Peça tècnica de suport",
 
         // -- Sobre nosotros --
         h1Nosotros: "Sobre nosaltres",

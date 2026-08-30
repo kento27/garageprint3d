@@ -46,7 +46,7 @@ p, a, li, button{
 }
 
 /* ----- MENU ----- */
-nav p, .menuPC ul{
+nav p, .menuPC > ul{
     padding: 0px;
     margin: 0px;
 }
@@ -128,7 +128,7 @@ nav p, .menuPC ul{
     justify-self: end;
 }
 
-.menuPC ul{
+.menuPC > ul{
     display: flex;
     text-decoration: none;
     list-style: none;
@@ -138,6 +138,31 @@ nav p, .menuPC ul{
 
 .menuPC a:hover{
     color: #F2933A;
+}
+
+.menuPC .dropdown-menu{
+    background-color: #404040;
+    border: none;
+    margin-top: 0;
+}
+
+.dropdown-menu a{
+    font-size: 1em;
+}
+
+.dropdown-menu{
+    background-color: #404040;
+    border: none;
+}
+
+.menuPC .dropdown-item{
+    color: #ffffff;
+}
+
+.menuPC .dropdown-item:hover{
+    background-color: #636363;
+    color: #F2933A;
+    border-radius: 5px;
 }
 
 .menuCont{
@@ -166,6 +191,29 @@ nav p, .menuPC ul{
     background-color: #C2690F;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.desplegableMenu .dropdown-menu{
+    background-color: #212529;
+    border: none;
+    box-shadow: none;
+}
+
+.desplegableMenu .dropdown-item{
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.desplegableMenu .dropdown-item:hover,
+.desplegableMenu .dropdown-item:focus{
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.desplegableMenu .dropdown-toggle,
+.desplegableMenu .dropdown-toggle:hover,
+.desplegableMenu .dropdown-toggle:focus{
+    color: #FFFFFF;
 }
 
 .offcanvas-body hr{

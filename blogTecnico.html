@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/tecnico.css">
-    <title>Garage Print 3D</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <title>Blog - GaragePrint3D</title>
 </head>
-
 <body>
     <!-- ---- MENU ---- -->
     <nav class="navbar navbar-dark bg-body-tertiary">
@@ -104,70 +102,44 @@
         </div>
     </nav>
 
-    <!-- ---- PORTADA ---- -->
-    <header class="hero">
-
-      <img class="hero-img" src="/img/portada.png" alt="Portada"/>
-
-      <div class="degradado"></div>
-      <div class="hero-content">
-
-        <div class="hero-logo">
-            <img src="img/logo_naranja_sinfondo.png" alt="Garage Print 3D">
-        </div>
-        <div class="hero-text">
-
-          <h1 data-translate="h1Portada">Impresión 3D Personalizada</h1>
-
-          <p data-translate="pPortada">Diseña y pide tu pieza personalizada con calidad profesional.
-            <br>
-            Web en construcción, disculpa las molestias</p>
-
-          <div class="hero-buttons">
-            <a href="index.html" class="btn-primary" data-translate="inicio">
-              Inicio
-            </a>
-
-            <a href="blog.html" class="btn-secondary">
-              Blog
-            </a>
-          </div>
-
-
-        </div>
-      </div>
-
+    <!-- Portada -->
+    <header>
+        <h1 data-translate="h1BlogTecnico">Blog Técnico</h1>
     </header>
 
-    <section class="section1">
-
-        <div class="section1-content">
-
-            <p class="construccion">
-                🚧 PAGINA WEB EN CONSTRUCCIÓN 🚧
-            </p>
-
-            <h2>
-                Impresión 3D para proyectos industriales
-            </h2>
-
-            <p>
-                En Garage Print 3D también trabajamos en proyectos de impresión 3D orientados al ámbito industrial.
-            </p>
-
-            <p>
-                Fabricamos piezas personalizadas y buscamos soluciones adaptadas a las necesidades de cada proyecto.
-            </p>
-
-            <p class="proximamente">
-                Próximamente encontrarás aquí más información sobre nuestros servicios industriales.
-            </p>
-
-            <a href="contactanos.html" class="btn-primary">
-                Contacta con nosotros
-            </a>
-
+    <!-- Recuerda -->
+    <section class="recuerdaSection">
+        <div class="recuerda">
+            <h2 data-translate="h2Recuerda">Recuerda</h2>
+            <p data-translate="pRecuerda">Nos mueve la pasión por la impresión 3D y es ahora cuando nos disponemos a monetizar parte de nuestro hobby. En este apartado lo mezclamos todo: lo personal y lo comercial. Aquí solo verás proyectos pasados, presentes y futuros de toda índole y condición, un chowseu del 3D.</p>
         </div>
+    </section>
+
+    <!-- ---- BLOG ---- -->
+    <section class="blog">
+
+      <!-- ---- POST 1 ---- -->
+        <article class="post">
+
+            <div class="carousel">
+
+                <button class="arrow left">&#10094;</button>
+
+                <div class="carousel-track">
+                    <video controls autoplay muted loop playsinline>
+                        <source src="videos/Tecnico/piezaSoporte/PiezaExtrusion.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+
+            </div>
+
+            <p data-translate="pPiezaExtrusion">Pieza tecnica de soporte</p>
+
+        </article>
+
+        
 
     </section>
 
@@ -216,11 +188,11 @@
             </div>
         </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
 </body>
-
 </html>
