@@ -143,7 +143,7 @@ const traducciones = {
         pNarutoVideo: "Figura de Naruto terminada",
 
         // Posts Tecnicos
-        pPiezaExtrusion: "Pieza tecnica de soporte",
+        pPiezaExtrusion: "Pieza de soporte de ejes",
 
         // -- Sobre nosotros --
         // Sobre nosotros
@@ -251,7 +251,7 @@ const traducciones = {
         pNarutoVideo: "Figura de Naruto acabada",
 
         // Posts Tecnicos
-        pPiezaExtrusion: "Peça tècnica de suport",
+        pPiezaExtrusion: "Peça de suport d'eixos",
 
         // -- Sobre nosotros --
         h1Nosotros: "Sobre nosaltres",
