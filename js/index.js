@@ -144,9 +144,10 @@ const traducciones = {
 
         // Posts Tecnicos
         pPiezaExtrusion: "Pieza de soporte de ejes",
+        pSoporteSensor: "Soporte de sensor",
+        pBobinadorFilamento: "Bobinador de filamento",
 
         // -- Sobre nosotros --
-        // Sobre nosotros
         h1Nosotros: "Sobre nosotros",
 
         // Content
@@ -252,6 +253,8 @@ const traducciones = {
 
         // Posts Tecnicos
         pPiezaExtrusion: "Peça de suport d'eixos",
+        pSoporteSensor: "Suport de sensor",
+        pBobinadorFilamento: "Bobinador de filament",
 
         // -- Sobre nosotros --
         h1Nosotros: "Sobre nosaltres",
